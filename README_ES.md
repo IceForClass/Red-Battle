@@ -3,6 +3,4 @@
 
 # Red Battle
 
-## Choose your language
-
-English **|** [Español](README_ES.md)
+[English](README.md) **|** Español
