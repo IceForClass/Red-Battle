@@ -151,7 +151,7 @@ void draw() {
             text("Jugar", startX + sizeX / 2, startY + sizeY / 2);
            // Comprobamos que queremos jugar
            if (mousePressed && mouseButton == LEFT) {
-                musicaMenu.pause();
+                musicaMenu.stop();
                 musicaBatalla();
                 combate = true;
                menu = false;

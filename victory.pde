@@ -23,7 +23,7 @@ void victoria() {
 void teclaVictoria() {
   if (finCombate == true) {
     if (key == 'X' || key == 'x') {
-      victory.pause();
+      victory.stop();
       recuperacion = 0;
       vida = maxVida;
       reinicioVariableRectangulo();
@@ -38,7 +38,7 @@ void teclaVictoria() {
       combate();
     }
     if (key == 'C' || key == 'c') {
-      victory.pause();
+      victory.stop();
       recuperacion = 0;
       vida = maxVida;
       reinicioVariableRectangulo();

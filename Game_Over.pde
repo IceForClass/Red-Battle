@@ -23,7 +23,7 @@ void teclaGameOver() {
       reiniciarVariables();
       reiniciarAtaqueRectangulo();
       recuperacion = 0;
-      GameOver.pause();
+      GameOver.stop();
       vida = maxVida;
       vidaRed = vidaRedMax;
       turnoJugador = true;
@@ -39,7 +39,7 @@ void teclaGameOver() {
       combate();
     }
     if (key == 'C' || key == 'c') {
-      GameOver.pause();
+      GameOver.stop();
       recuperacion = 0;
       vida = maxVida;
       turnoJugador = true;

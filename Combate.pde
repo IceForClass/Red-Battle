@@ -72,11 +72,11 @@ void combate() {
      */
   } else if (finCombate == true ) {
     if (vida <= 0) {
-      musicaBatalla.pause();
+      musicaBatalla.stop();
       GameOver.play();
       gameOver();
     } else {
-      musicaBatalla.pause();
+      musicaBatalla.stop();
       victory.play();
       victoria();
     }
@@ -197,12 +197,12 @@ void botones() {
   }
   if (vida <= 0) {
     vida = 0;
-    musicaBatalla.pause();
+    musicaBatalla.stop();
     finCombate = true;
   }
   // Controlar la vida de Red
   if (vidaRed <= 0) {
-    musicaBatalla.pause();
+    musicaBatalla.stop();
     finCombate = true;
     victoria = true;
   }
