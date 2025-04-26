@@ -24,7 +24,6 @@ void teclaVictoria() {
   if (finCombate == true) {
     if (key == 'X' || key == 'x') {
       victory.pause();
-      victory.rewind();
       recuperacion = 0;
       vida = maxVida;
       reinicioVariableRectangulo();
@@ -40,7 +39,6 @@ void teclaVictoria() {
     }
     if (key == 'C' || key == 'c') {
       victory.pause();
-      victory.rewind();
       recuperacion = 0;
       vida = maxVida;
       reinicioVariableRectangulo();
@@ -52,7 +50,6 @@ void teclaVictoria() {
       turnoJugador = true;
       turnoAtaque = 0;
       turnoCombate = 0;
-      musicaMenu.rewind();
       musicaMenu.loop();
       loop();
     }

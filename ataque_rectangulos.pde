@@ -39,7 +39,6 @@ void AtaqueRectangulos() {
     if (almaPlayer.colisionConRectangulo(r.x, r.y, r.anchoAtaqueCuadrado, r.altoAtaqueCuadrado)) {
       vida -= 4;
       golpe.play();
-      golpe.rewind();
       ataqueRectangulo.remove(i);
       totalRectangulosGenerados--;
     }

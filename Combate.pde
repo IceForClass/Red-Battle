@@ -20,6 +20,7 @@ PImage[] redImagen = new PImage[totalFrames];
 int totalFramesHard = 25;
 int currentFrameHard = 0;
 PImage[] redHard = new PImage[totalFramesHard];
+SoundFile musicaBatalla;
 
 // Posición
 int fightX = 83;
@@ -84,9 +85,8 @@ void combate() {
 
 
 void musicaBatalla() {
-  // Inicializar la música de la batalla
-  minim = new Minim(this);
-  musicaBatalla = minim.loadFile("musica/RedThemeBatlle.mp3");
+  // Inicializar la música de batalla
+  musicaBatalla = new SoundFile(this, "musica/RedThemeBatlle.mp3");
   musicaBatalla.loop();
 }
 
@@ -241,7 +241,6 @@ void moverMenu() {
         // Sonido cada vez que te mueves de un botón para otro en el menú
         if (keyCode == LEFT || keyCode == RIGHT) { // Si no ponemos esto sonará con cualquier tecla
           // Si no se reinicia solo suena una vez
-          Sonidoboton.rewind();
           Sonidoboton.play();
         }
         if (boton == 1 && key == 'z' || boton == 1 && key == 'Z') {

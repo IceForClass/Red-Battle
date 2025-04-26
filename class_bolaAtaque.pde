@@ -25,7 +25,6 @@ void manejarBolasAtaque() {
     if (almaPlayer.colisionConBola(bolaAtaque.x, bolaAtaque.y)) {
       vida -= 4;
       golpe.play();
-      golpe.rewind();
       bolasAtaque.remove(i);
       bolasSalidas++;
     }

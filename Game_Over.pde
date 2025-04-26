@@ -24,7 +24,6 @@ void teclaGameOver() {
       reiniciarAtaqueRectangulo();
       recuperacion = 0;
       GameOver.pause();
-      GameOver.rewind();
       vida = maxVida;
       vidaRed = vidaRedMax;
       turnoJugador = true;
@@ -33,7 +32,6 @@ void teclaGameOver() {
       finCombate = false;
       combate = true;
       victoria = false;
-      musicaMenu.rewind();
       musicaBatalla();
       turnoAtaque = 0;
       reinicioVariableRectangulo();
@@ -42,7 +40,6 @@ void teclaGameOver() {
     }
     if (key == 'C' || key == 'c') {
       GameOver.pause();
-      GameOver.rewind();
       recuperacion = 0;
       vida = maxVida;
       turnoJugador = true;
@@ -55,7 +52,6 @@ void teclaGameOver() {
       victoria = false;
       menu = true;
       turnoAtaque = 0;
-      musicaMenu.rewind();
       musicaMenu.loop();
       loop();
     }
